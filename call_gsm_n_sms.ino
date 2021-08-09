@@ -37,7 +37,7 @@ void SendMessage()
   //Serial.println ("Set SMS Number");
   sim.println("AT+CMGS=\"" + number + "\"\r"); //Mobile phone number to send message
   delay(1000);
-  String SMS = "Nitakufinya, how are you?";
+  String SMS = "Kiroboto, how are you?";
   sim.println(SMS);
   delay(100);
   sim.println((char)26);// ASCII code of CTRL+Z
